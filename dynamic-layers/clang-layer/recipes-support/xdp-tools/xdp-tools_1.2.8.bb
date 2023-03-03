@@ -10,6 +10,7 @@ DEPENDS += " libbpf clang-native zlib elfutils libpcap"
 
 SRC_URI = "git://github.com/xdp-project/xdp-tools.git;branch=v1.2;protocol=https \
             file://0001-configure-skip-toolchain-checks.patch \
+            file://0001-dpdk-preint.patch \
             file://0002-Makefile-It-does-not-detect-libbpf-header-from-sysro.patch \
             file://0003-Makefile-fix-KeyError-failure.patch \
             file://0004-Makefile-fix-libxdp.pc-error.patch \

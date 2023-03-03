@@ -1,0 +1,25 @@
+From 6ad56ae5358cc0ac24ee416716880716f379bc03 Mon Sep 17 00:00:00 2001
+From: KARN JYE LAU <karn.jye.lau@intel.com>
+Date: Fri, 3 Mar 2023 14:24:58 +0800
+Subject: [PATCH] dpdk preint
+
+---
+ headers/linux/if_xdp.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/headers/linux/if_xdp.h b/headers/linux/if_xdp.h
+index a78a809..c24f1df 100644
+--- a/headers/linux/if_xdp.h
++++ b/headers/linux/if_xdp.h
+@@ -104,6 +104,8 @@ struct xdp_desc {
+ 	__u64 addr;
+ 	__u32 len;
+ 	__u32 options;
++	__u64 txtime;  
++
+ };
+ 
+ /* UMEM descriptor is __u64 */
+-- 
+2.34.1
+
